@@ -1,0 +1,24 @@
+body{
+    background-color: #ffb703;
+}
+h1{
+    text-align: center;
+}
+#add{
+    border-radius: 5px 5px 5px;
+    border-style: outset;
+    padding: 8px;
+}
+#choices{
+    padding: 25px;
+}
+#courses{
+    display: flex;
+    justify-content: space-around;
+}
+#subject{
+    background-color: aliceblue;
+    padding: 15px ;
+    margin: 15px;
+}
+
