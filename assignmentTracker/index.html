@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./assets/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/91c3e495c4.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d0488b9a16.js" crossorigin="anonymous"></script>
     <title>Assignment Tracker</title>
 </head>
 
@@ -19,7 +19,7 @@
 
         <!-- choices bar -->
         <div id="choices">
-            <button >
+            <button id="home" >
                 <a href="./home.html">back home</a>
                 
             </button>
@@ -27,34 +27,31 @@
 
             <form id="subjectForm">
                 <label for="subjectTitle">Subject </label>
-                <input type="text" id="subjectTitle" name="subjectTitle">
+                <input type="text" id="subjectTitle" name="subjectTitle"><br>
+                <label for="subjectTask">Task</label>
+                <input type="text" id="subjectTask" name="subjectTask"><br>
+
+                <label>Importance</label><br>
+                <label for="vvim">Very Important</label>
+                <input type="radio" value="veryImportant" id="veryImportant" name="option"><br>
+                <label for="im">Important</label>
+                <input type="radio" value="important" id="important" name="option"><br>
+                <label for="ni">You got Time</label>
+                <input type="radio" value="notImportant" id="notImportant" name="option"><br>
                 <input id="submitSubject" type="submit" value="submit">
+            </form>
+
+            <!-- new task -->
+            <form id="newTaskForm">
+                <label for="newTaskText">Enter New Task :</label>
+                <input type="text" id="newTasktext" name="newTaskText">
+                <input type="submit" value="submit" id="submitNewTask">
             </form>
             
         </div>
         <!-- display courses  -->
-        <div id="courses">
-            <section class="subject">
-                <h4>English</h4>
-                <Button id="addTask"><i class="fa-solid fa-plus"></i></Button>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                    
-            </section>
-            <section class="subject">
-                <h4>Math</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                </p>
-                
-            </section>
-            
-        </div>
+        <div id="courses"></div>
     </main>
     <script src="./assets/prac.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
-    crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

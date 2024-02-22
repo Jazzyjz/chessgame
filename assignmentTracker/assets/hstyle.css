@@ -1,0 +1,16 @@
+body{
+    background-color: #ffb703 !important;
+}
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+#index{
+    border-radius: 5px 5px 5px;
+    border-style: outset;
+    padding: 8px;
+    border-radius: 10px 15px 10px;
+    box-shadow: 2px 2px 2px;
+    margin: 5px;
+}
